@@ -1,0 +1,11 @@
+(jbuild_version 1)
+
+(ocamllex (lex))
+
+(menhir
+  ((flags (--explain))
+   (modules (parse))))
+
+(library
+  ((name hvm)
+   (preprocess (pps (ppx_deriving.std)))))

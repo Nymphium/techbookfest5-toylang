@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(executable
+  ((name toy)
+   (libraries (hvm))
+   (modes (native))
+   (flags (:standard -g -linkall -annot -bin-annot))))
